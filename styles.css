@@ -1,0 +1,18 @@
+body {
+    background-color: teal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: antiquewhite;
+}
+
+.display {
+    min-width: 500px;
+    min-height: 100px;
+    margin: 20px;
+    background-color: #4d4d4d;
+}
