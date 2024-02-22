@@ -4,6 +4,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     min-width: 100px;
     min-height: 100px;
@@ -15,4 +16,17 @@ body {
     min-height: 100px;
     margin: 20px;
     background-color: #4d4d4d;
+    color: white;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.button {
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
 }
