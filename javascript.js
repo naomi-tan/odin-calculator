@@ -146,8 +146,6 @@ buttons.addEventListener('click', (event) => {
             default: update_text = display_text + event.target.textContent;
         }
     }
-    console.log(`n1 = ${n1}, n2 = ${n2}, op = ${op}`);
-    console.log('Display currently shows: ' + update_text);
     display.textContent = update_text;
 })
 
