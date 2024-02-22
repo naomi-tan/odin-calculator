@@ -51,8 +51,8 @@ let buttons = document.querySelector('.buttons');
 
 button_text = [
     ['+', '-', 'x', '/'],
-    ['7', '8', '9', 'Clear'],
-    ['4', '5', '6', 'Backspace'],
+    ['7', '8', '9', 'CE'],
+    ['4', '5', '6', 'DEL'],
     ['1', '2', '3', '^'],
     ['+/-', '0', '.', '=']
 ]
@@ -67,7 +67,6 @@ for(let row of button_text){
     for(let text of row){
         let button = document.createElement('button');
         button.textContent = text;
-        button.className = 'button';
         button.id = text;
         row_element.appendChild(button);
         j++;
@@ -86,7 +85,7 @@ buttons.addEventListener('click', (event) => {
     // if = pressed store n2 and operate
     if(event.target.tagName == 'BUTTON'){
         switch(event.target.textContent){
-            case 'Clear':
+            case 'CE':
                 update_text = '';
                 n1 = undefined;
                 n2 = undefined;
@@ -126,7 +125,7 @@ buttons.addEventListener('click', (event) => {
                 else {
                     break;
                 }
-            case 'Backspace':
+            case 'DEL':
                 if(display_text.length == 0){
                     break;
                 }
